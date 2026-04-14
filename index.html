@@ -1,11 +1,363 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>It Works!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>登壇履歴 | Our Tech Talks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e1117;
+    --surface: #161b22;
+    --surface-hover: #1c2333;
+    --border: #2a3140;
+    --text: #e2e8f0;
+    --text-muted: #8b949e;
+    --accent: #58a6ff;
+    --accent-glow: rgba(88, 166, 255, 0.15);
+    --green: #3fb950;
+    --orange: #d29922;
+    --pink: #f778ba;
+    --radius: 10px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.7;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    position: relative;
+    padding: 80px 24px 60px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -120px; left: 50%; transform: translateX(-50%);
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(88,166,255,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    position: relative;
+  }
+  .hero h1 span {
+    background: linear-gradient(135deg, var(--accent), var(--pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero p {
+    color: var(--text-muted);
+    margin-top: 12px;
+    font-size: 1.05rem;
+    position: relative;
+  }
+
+  /* ── Controls ── */
+  .controls {
+    max-width: 960px;
+    margin: 0 auto 20px;
+    padding: 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+  .search-box {
+    flex: 1 1 260px;
+    position: relative;
+  }
+  .search-box input {
+    width: 100%;
+    padding: 10px 16px 10px 42px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .search-box input:focus { border-color: var(--accent); }
+  .search-box svg {
+    position: absolute;
+    left: 14px; top: 50%; transform: translateY(-50%);
+    color: var(--text-muted);
+  }
+  .filter-btn {
+    padding: 8px 18px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text-muted);
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .filter-btn:hover { border-color: var(--accent); color: var(--text); }
+  .filter-btn.active {
+    background: var(--accent-glow);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  /* ── Stats ── */
+  .stats {
+    max-width: 960px;
+    margin: 0 auto 36px;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    text-align: center;
+  }
+  .stat-card .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .stat-card .label {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+
+  /* ── Talk Cards ── */
+  .talks {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .talk-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 26px;
+    transition: all 0.25s;
+    animation: fadeUp 0.4s ease both;
+  }
+  .talk-card:hover {
+    border-color: var(--accent);
+    background: var(--surface-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .talk-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 0.82rem;
+  }
+  .talk-date {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--green);
+    font-weight: 700;
+  }
+  .talk-event {
+    color: var(--text-muted);
+  }
+  .talk-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    line-height: 1.5;
+  }
+  .talk-title a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .talk-title a:hover { color: var(--accent); }
+  .talk-speaker {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+  }
+  .talk-speaker strong {
+    color: var(--text);
+    font-weight: 700;
+  }
+
+  .no-results {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 60px 0;
+    font-size: 1rem;
+  }
+
+  .year-divider {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--orange);
+    padding: 12px 0 4px;
+    border-bottom: 1px dashed var(--border);
+    margin-bottom: 2px;
+  }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+  }
+
+  @media (max-width: 600px) {
+    .hero { padding: 48px 20px 36px; }
+    .talk-card { padding: 16px 18px; }
+  }
+</style>
 </head>
 <body>
-  <h1>It Works!</h1>
+
+<div class="hero">
+  <h1><span>Our Tech Talks</span></h1>
+  <p>社内メンバーの技術勉強会・カンファレンス登壇履歴</p>
+</div>
+
+<div class="stats" id="stats"></div>
+
+<div class="controls">
+  <div class="search-box">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    <input type="text" id="search" placeholder="登壇者・イベント・タイトルで検索…">
+  </div>
+  <div id="yearFilters"></div>
+</div>
+
+<div class="talks" id="talks"></div>
+
+<footer>データ更新: talks.json を編集して push するだけ！</footer>
+
+<script>
+(async function() {
+  // ── データ読み込み（外部 talks.json） ──
+  const container = document.getElementById('talks');
+  container.innerHTML = '<div class="no-results">読み込み中…</div>';
+
+  let talks;
+  try {
+    const res = await fetch('./talks.json');
+    if (!res.ok) throw new Error(res.status);
+    talks = (await res.json()).sort((a, b) => b.date.localeCompare(a.date));
+  } catch (e) {
+    container.innerHTML = '<div class="no-results">データの読み込みに失敗しました。talks.json を確認してください。</div>';
+    console.error('Failed to load talks.json:', e);
+    return;
+  }
+
+  // ── 統計 ──
+  const uniqueSpeakers = new Set(talks.map(t => t.speaker)).size;
+  const uniqueEvents = new Set(talks.map(t => t.event)).size;
+  const years = [...new Set(talks.map(t => t.date.slice(0, 4)))].sort().reverse();
+
+  document.getElementById('stats').innerHTML = `
+    <div class="stat-card"><div class="num">${talks.length}</div><div class="label">登壇数</div></div>
+    <div class="stat-card"><div class="num">${uniqueSpeakers}</div><div class="label">登壇者数</div></div>
+    <div class="stat-card"><div class="num">${uniqueEvents}</div><div class="label">イベント数</div></div>
+    <div class="stat-card"><div class="num">${years[0]}</div><div class="label">最新年</div></div>
+  `;
+
+  // ── 年フィルター ──
+  const filtersEl = document.getElementById('yearFilters');
+  filtersEl.innerHTML = `<button class="filter-btn active" data-year="all">すべて</button>`
+    + years.map(y => `<button class="filter-btn" data-year="${y}">${y}</button>`).join('');
+
+  let activeYear = 'all';
+  filtersEl.addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    filtersEl.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeYear = btn.dataset.year;
+    render();
+  });
+
+  // ── 検索 ──
+  const searchInput = document.getElementById('search');
+  searchInput.addEventListener('input', () => render());
+
+  // ── 描画 ──
+  function render() {
+    const q = searchInput.value.toLowerCase();
+    const filtered = talks.filter(t => {
+      const matchYear = activeYear === 'all' || t.date.startsWith(activeYear);
+      const matchSearch = !q
+        || t.speaker.toLowerCase().includes(q)
+        || t.event.toLowerCase().includes(q)
+        || t.title.toLowerCase().includes(q);
+      return matchYear && matchSearch;
+    });
+
+    const container = document.getElementById('talks');
+    if (filtered.length === 0) {
+      container.innerHTML = '<div class="no-results">該当する登壇が見つかりません</div>';
+      return;
+    }
+
+    let html = '';
+    let currentYear = '';
+    filtered.forEach((t, i) => {
+      const y = t.date.slice(0, 4);
+      if (y !== currentYear) {
+        currentYear = y;
+        html += `<div class="year-divider">${y}</div>`;
+      }
+      const titleContent = t.url
+        ? `<a href="${t.url}" target="_blank" rel="noopener">${esc(t.title)} ↗</a>`
+        : esc(t.title);
+      html += `
+        <div class="talk-card" style="animation-delay:${i * 0.04}s">
+          <div class="talk-meta">
+            <span class="talk-date">${t.date}</span>
+            <span class="talk-event">${esc(t.event)}</span>
+          </div>
+          <div class="talk-title">${titleContent}</div>
+          <div class="talk-speaker">by <strong>${esc(t.speaker)}</strong></div>
+        </div>`;
+    });
+    container.innerHTML = html;
+  }
+
+  function esc(s) {
+    const d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  render();
+})();
+</script>
 </body>
 </html>
