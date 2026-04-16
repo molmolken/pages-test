@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>登壇履歴 | Our Tech Talks</title>
+<title>登壇履歴ver0.3 | Our Tech Talks</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -202,19 +202,20 @@
     color: var(--text);
     font-weight: 700;
   }
-  .talk-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 16px;
-    margin-top: 10px;
-    font-size: 0.82rem;
+  .talk-event a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s;
   }
-  .talk-links a {
+  .talk-event a:hover { color: var(--accent); }
+  .talk-speaker a {
     color: var(--accent);
     text-decoration: none;
+    font-size: 0.82rem;
+    font-weight: 400;
     transition: opacity 0.2s;
   }
-  .talk-links a:hover { opacity: 0.75; }
+  .talk-speaker a:hover { opacity: 0.75; }
 
   .no-results {
     text-align: center;
@@ -251,7 +252,7 @@
 
 <div class="hero">
   <img src="./logo.png" alt="BuySell Technologies" class="hero-logo">
-  <p>社内メンバーの技術勉強会・カンファレンス登壇履歴 ver.0.3</p>
+  <p>社内メンバーの技術勉強会・カンファレンス登壇履歴</p>
 </div>
 
 <div class="stats" id="stats"></div>
@@ -266,7 +267,7 @@
 
 <div class="talks" id="talks"></div>
 
-<footer>© 2026 BuySell Technologies Co., Ltd.</footer>
+<footer>データ更新: talks.json を編集して push するだけ！</footer>
 
 <script>
 (async function() {
@@ -342,26 +343,29 @@
         currentYear = y;
         html += `<div class="year-divider">${y}</div>`;
       }
-      const titleContent = esc(t.title);
+      // イベント名: event_url があればリンク化
+      const eventContent = t.event_url
+        ? `<a href="${t.event_url}" target="_blank" rel="noopener">${esc(t.event)} ↗</a>`
+        : esc(t.event);
 
-      // リンク行を組み立て（値があるものだけ表示）
-      const links = [];
-      if (t.event_url) links.push(`<a href="${t.event_url}" target="_blank" rel="noopener">イベント ↗</a>`);
-      if (t.slide_url) links.push(`<a href="${t.slide_url}" target="_blank" rel="noopener">登壇資料 ↗</a>`);
-      if (t.twitter_url) links.push(`<a href="${t.twitter_url}" target="_blank" rel="noopener">X (Twitter) ↗</a>`);
-      const linksHtml = links.length
-        ? `<div class="talk-links">${links.join('')}</div>`
+      // 発表タイトル: slide_url があればリンク化
+      const titleContent = t.slide_url
+        ? `<a href="${t.slide_url}" target="_blank" rel="noopener">${esc(t.title)} ↗</a>`
+        : esc(t.title);
+
+      // 登壇者名: twitter_url があれば末尾にリンク追加
+      const twitterLink = t.twitter_url
+        ? ` <a href="${t.twitter_url}" target="_blank" rel="noopener">(X (Twitter) ↗)</a>`
         : '';
 
       html += `
         <div class="talk-card" style="animation-delay:${i * 0.04}s">
           <div class="talk-meta">
             <span class="talk-date">${t.date}</span>
-            <span class="talk-event">${esc(t.event)}</span>
+            <span class="talk-event">${eventContent}</span>
           </div>
           <div class="talk-title">${titleContent}</div>
-          <div class="talk-speaker">by <strong>${esc(t.speaker)}</strong></div>
-          ${linksHtml}
+          <div class="talk-speaker">by <strong>${esc(t.speaker)}</strong>${twitterLink}</div>
         </div>`;
     });
     container.innerHTML = html;
