@@ -110,34 +110,6 @@
     color: var(--accent);
   }
 
-  /* ── Stats ── */
-  .stats {
-    max-width: 960px;
-    margin: 0 auto 36px;
-    padding: 0 24px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 12px;
-  }
-  .stat-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 18px 20px;
-    text-align: center;
-  }
-  .stat-card .num {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--accent);
-  }
-  .stat-card .label {
-    font-size: 0.8rem;
-    color: var(--text-muted);
-    margin-top: 2px;
-  }
-
   /* ── Talk Cards ── */
   .talks {
     max-width: 960px;
@@ -252,10 +224,8 @@
 
 <div class="hero">
   <img src="./logo.png" alt="BuySell Technologies" class="hero-logo">
-  <p>社内メンバーの技術勉強会・カンファレンス登壇履歴</p>
+  <p>BuySell Technologies：技術勉強会・カンファレンス登壇履歴</p>
 </div>
-
-<div class="stats" id="stats"></div>
 
 <div class="controls">
   <div class="search-box">
@@ -286,17 +256,7 @@
     return;
   }
 
-  // ── 統計 ──
-  const uniqueSpeakers = new Set(talks.map(t => t.speaker)).size;
-  const uniqueEvents = new Set(talks.map(t => t.event)).size;
   const years = [...new Set(talks.map(t => t.date.slice(0, 4)))].sort().reverse();
-
-  document.getElementById('stats').innerHTML = `
-    <div class="stat-card"><div class="num">${talks.length}</div><div class="label">登壇数</div></div>
-    <div class="stat-card"><div class="num">${uniqueSpeakers}</div><div class="label">登壇者数</div></div>
-    <div class="stat-card"><div class="num">${uniqueEvents}</div><div class="label">イベント数</div></div>
-    <div class="stat-card"><div class="num">${years[0]}</div><div class="label">最新年</div></div>
-  `;
 
   // ── 年フィルター ──
   const filtersEl = document.getElementById('yearFilters');
