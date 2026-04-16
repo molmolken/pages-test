@@ -1,65 +1,1010 @@
 [
   {
-    "date": "2025-04-10",
-    "event": "React Conf Tokyo 2025",
-    "title": "大規模SPAのパフォーマンス改善 ─ Core Web Vitals との戦い",
-    "speaker": "田中 太郎",
-    "event_url": "https://example.com/react-conf-2025",
-    "slide_url": "https://example.com/slides/react-perf",
-    "twitter_url": "https://x.com/tanaka_example"
+    "event": "Go Connect #11",
+    "date": "2026-03-18",
+    "title": "synctest を Ebitengine で可視化した話",
+    "speaker": "中舘 澪男",
+    "twitter_url": "https://x.com/nakadate00",
+    "slide_url": "https://speakerdeck.com/nakadate_reo/synctest-wo-ebitengine-teke-shi-hua-sitahua",
+    "event_url": "https://gotalk.connpass.com/event/383091/"
   },
   {
-    "date": "2025-03-22",
-    "event": "Go Conference 2025 Spring",
-    "title": "Go 1.24 の iter パッケージ徹底解説",
-    "speaker": "鈴木 花子",
-    "event_url": "https://example.com/gocon-2025",
-    "slide_url": "https://example.com/slides/go-iter",
-    "twitter_url": ""
+    "event": "シネマ de LT会#2 〜Back to the Screen〜",
+    "date": "2026-03-05",
+    "title": "ITエンジニアが見るべき3つの映画",
+    "speaker": "吉森 健成",
+    "twitter_url": "https://x.com/molmolken",
+    "slide_url": "https://speakerdeck.com/molmolken/three-essential-films-for-software-engineers",
+    "event_url": "https://aeon.connpass.com/event/384637/"
   },
   {
-    "date": "2025-02-15",
-    "event": "JAWS DAYS 2025",
-    "title": "AWS Lambda SnapStart で Java アプリのコールドスタートを 90% 削減した話",
-    "speaker": "佐藤 一郎",
-    "event_url": "https://example.com/jawsdays-2025",
+    "event": "Go Conference mini in Sendai 2026",
+    "date": "2026-02-21",
+    "title": "「抽象に依存せよ」が分からなかった新卒1年目の私が、Goのインターフェースと和解するまで",
+    "speaker": "宮川 玄暉",
+    "twitter_url": "https://x.com/kurogenki0522",
+    "slide_url": "https://speakerdeck.com/kurogenki/chou-xiang-niyi-cun-seyo-gafen-karanakatutaxin-zu-1nian-mu-nosi-ga-gonointahuesutohe-jie-surumade",
+    "event_url": "https://sendaigo.jp/"
+  },
+  {
+    "event": "Developers Summit 2026",
+    "date": "2026-02-18",
+    "title": "AI時代のプロダクトと開発 - 経営と開発の“両輪”で考えるAIネイティブ戦略",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
     "slide_url": "",
-    "twitter_url": "https://x.com/sato_example"
+    "event_url": "https://event.shoeisha.jp/devsumi/20260218/session/6420"
   },
   {
+    "event": "NCA Annual Conference 2025",
+    "date": "2025-12-18",
+    "title": "グループCSIRT構築の取り組みとM&Aを見据えたCSIRT組織の未来",
+    "speaker": "内田 信吾",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://annualconf.nca.gr.jp/"
+  },
+  {
+    "event": "CoLab Conf 2025 Winter",
+    "date": "2025-12-13",
+    "title": "パネルディスカッション「トップエンジニアはどうAIを武器にしていったのか？」",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://supporterz-seminar.connpass.com/event/371963/"
+  },
+  {
+    "event": "トップエンジニアのAIとの向き合い方",
+    "date": "2025-11-12",
+    "title": "パネルディスカッション",
+    "speaker": "MJ",
+    "twitter_url": "https://x.com/mj3880",
+    "slide_url": "",
+    "event_url": "https://supporterz-seminar.connpass.com/event/373477/"
+  },
+  {
+    "event": "d2i-25 【25新卒エンジニアLT会】",
+    "date": "2025-10-09",
+    "title": "Cloud Run Jobsを使ってデータ修正を楽にする",
+    "speaker": "長野 哉汰",
+    "twitter_url": "https://x.com/rabel_belbel",
+    "slide_url": "",
+    "event_url": "https://connpass.com/event/366648/"
+  },
+  {
+    "event": "Go Conference 2025",
+    "date": "2025-09-28",
+    "title": "私達はmodernize packageに夢を見るか feat. go/analysis go/ast",
+    "speaker": "牟田 薫",
+    "twitter_url": "https://x.com/m_t_tion1",
+    "slide_url": "https://speakerdeck.com/kaorumuta/go-conference-2025",
+    "event_url": "https://gocon.jp/2025/"
+  },
+  {
+    "event": "プロダクトヒストリーカンファレンス2025",
+    "date": "2025-09-20",
+    "title": "AI時代のCTO。プロダクト開発の今と未来",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://lp-prohis.youtrust.jp/"
+  },
+  {
+    "event": "Security.any #06 忘れないでセキュリティLT",
+    "date": "2025-09-09",
+    "title": "M&Aを推進するBuySell Technologiesが取り組む、グループ会社間のセキュリティ統制策",
+    "speaker": "内田 信吾",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://security-any.connpass.com/event/362904/"
+  },
+  {
+    "event": "開発組織Summit",
+    "date": "2025-09-02",
+    "title": "AI時代に生き残るための開発組織戦略 - いま求められる人材と投資の現在地",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://jp.findy-team.io/conference/ai-dev-org-summit/"
+  },
+  {
+    "event": "【AIエージェント活用企業特集】1時間で6社と出会う！リクルーティングピッチイベント",
+    "date": "2025-08-27",
+    "title": "AIネイティブな開発組織づくり",
+    "speaker": "MJ",
+    "twitter_url": "https://x.com/mj3880",
+    "slide_url": "",
+    "event_url": "https://techplay.jp/event/985007"
+  },
+  {
+    "event": "IssueHunt Lounge#12",
+    "date": "2025-07-30",
+    "title": "M&Aを推進するBuySell Technologiesが取り組む、グループ会社間のセキュリティ統制策",
+    "speaker": "千棒 貴博、戸澤 左斗士、内田 信吾",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://prtimes.jp/main/html/rd/p/000000208.000039740.html"
+  },
+  {
+    "event": "レバテック Meetup ～AIエージェントと共に進化する開発現場～",
+    "date": "2025-07-24",
+    "title": "PdMがプルリクエストを作る新しい開発フローの整備",
+    "speaker": "望月 洸志",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://levtechcareer.connpass.com/event/360710/"
+  },
+  {
+    "event": "CoLab Conf",
+    "date": "2025-07-13",
+    "title": "AIネイティブ時代におけるエンジニアのキャリア戦略",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://supporterz-seminar.connpass.com/event/355775/"
+  },
+  {
+    "event": "CTO座談会〜AI時代エンジニアの採用要件はどう変わる？〜",
+    "date": "2025-06-11",
+    "title": "ディスカッション",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://findy-enterprise.connpass.com/event/356660/"
+  },
+  {
+    "event": "Go Connect #7",
+    "date": "2025-06-11",
+    "title": "DeepWiki で Go をもっと好きになろう",
+    "speaker": "菅 直也",
+    "twitter_url": "https://x.com/satoIsSugar",
+    "slide_url": "https://speakerdeck.com/sgash708/deepwiki-de-go-womotutohao-kininarou",
+    "event_url": "https://gotalk.connpass.com/event/355423/"
+  },
+  {
+    "event": "DevHRフィッシュボウル　〜開発組織の成長戦略〜",
+    "date": "2025-06-03",
+    "title": "フィッシュボウル",
+    "speaker": "渡邊 直人",
+    "twitter_url": "https://x.com/naoto_pq",
+    "slide_url": "",
+    "event_url": "https://bitkey.connpass.com/event/353629/"
+  },
+  {
+    "event": "【Vibe Codingデモ】生成AI で打開！Cursor/Devin/MCPサーバー活用術",
+    "date": "2025-05-28",
+    "title": "ライブデモ",
+    "speaker": "菅 直也、大石 悠真",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://supporterz-seminar.connpass.com/event/355387/"
+  },
+  {
+    "event": "AIネイティブ開発 Tips 1000本ノック",
+    "date": "2025-05-22",
+    "title": "非公開",
+    "speaker": "重野 光哉、宮川 玄暉",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": ""
+  },
+  {
+    "event": "Asakusa.go #5",
+    "date": "2025-05-21",
+    "title": "チームが幸せになるカスタムエラーのススメ",
+    "speaker": "中舘 澪男",
+    "twitter_url": "https://x.com/nakadate00",
+    "slide_url": "https://speakerdeck.com/nakadate_reo/timugaxing-seninarukasutamueranosusume",
+    "event_url": "https://asakusago.connpass.com/event/354200/"
+  },
+  {
+    "event": "Asakusa.go #5",
+    "date": "2025-05-21",
+    "title": "環境変数ライブラリ選手権",
+    "speaker": "菅 直也",
+    "twitter_url": "https://x.com/satoIsSugar",
+    "slide_url": "https://speakerdeck.com/sgash708/huan-jing-bian-shu-raiburarixuan-shou-quan",
+    "event_url": "https://asakusago.connpass.com/event/354200/"
+  },
+  {
+    "event": "開発現場のAI導入最前線 〜4社のキーマンが語る実装と運用のリアル〜【サポーターズCoLab】",
+    "date": "2025-05-14",
+    "title": "AIネイティブな開発組織のつくりかた",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://supporterz-seminar.connpass.com/event/351877/"
+  },
+  {
+    "event": "業務で活かす！コード生成AI活用の事例共有会【サポーターズCoLab】",
+    "date": "2025-04-23",
+    "title": "交流会",
+    "speaker": "かじけん",
+    "twitter_url": "https://x.com/kajiken",
+    "slide_url": "",
+    "event_url": "https://supporterz-seminar.connpass.com/event/350876/"
+  },
+  {
+    "event": "2024年度にEMとして頑張ったことを発表して褒め合う会【EM Oasis 特別会】",
+    "date": "2025-04-18",
+    "title": "非公開",
+    "speaker": "MJ",
+    "twitter_url": "https://x.com/mj3880",
+    "slide_url": "",
+    "event_url": "https://emoasis.connpass.com/event/349203/"
+  },
+  {
+    "event": "ITエンジニア キャリアWEEK　未来を生き抜く9つの視点",
+    "date": "2025-03-27",
+    "title": "AI時代に活躍する必須スキル。エンジニアの価値を高めるために必要なこと",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://rag-it-careerweek.pivot.inc/"
+  },
+  {
+    "event": "Findy connpassメンバー3万人記念！エンジニアのつながりを祝う感謝祭「広がる未来",
+    "date": "2025-03-24",
+    "title": "発信するエンジニアが未来を切り開く（技術発信の意義と価値）",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://findy.connpass.com/event/346315/"
+  },
+  {
+    "event": "【ビズリーチ／バイセルテクノロジーズ／ラクス】EM勉強会～開発組織改革と生産性向上の実践事例から学ぶ",
+    "date": "2025-03-05",
+    "title": "パネルディスカッション\n・各社の開発組織・体制の特徴や強みは？\n・生産性向上にどう向き合っているのか？",
+    "speaker": "MJ",
+    "twitter_url": "https://x.com/mj3880",
+    "slide_url": "",
+    "event_url": "https://rakus.connpass.com/event/344824/"
+  },
+  {
+    "event": "新宿御苑.wasm #2025.2.28",
+    "date": "2025-02-28",
+    "title": "はじめての Go ＊ WASM ＊ OCR",
+    "speaker": "菅 直也",
+    "twitter_url": "https://x.com/satoIsSugar",
+    "slide_url": "https://speakerdeck.com/sgash708/hazimeteno-go-star-wasm-star-ocr",
+    "event_url": "https://shinjukugyoen.connpass.com/event/342134/"
+  },
+  {
+    "event": "アジャイル開発「スクラム」って各社どうしてる?エンジニア知見共有会",
+    "date": "2025-02-27",
+    "title": "チームの生産性を向上させるためのスクラム運用",
+    "speaker": "藤澤 明慶",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://tech-street.connpass.com/event/275039/"
+  },
+  {
+    "event": "ゆるSRE勉強会 #9 〜最近始めた取り組み共有大会〜",
+    "date": "2025-02-21",
+    "title": "プロダクトチームと距離を縮めるために試してる事",
+    "speaker": "佐々木 誠",
+    "twitter_url": "",
+    "slide_url": "https://speakerdeck.com/systemcat/purodakutotimutoju-li-wosuo-merutamenishi-siterushi",
+    "event_url": "https://yuru-sre.connpass.com/event/342085/"
+  },
+  {
+    "event": "Go Connect #5",
+    "date": "2025-02-19",
+    "title": "もう僕は OpenAPI を書きたくない",
+    "speaker": "菅 直也",
+    "twitter_url": "https://x.com/satoIsSugar",
+    "slide_url": "https://speakerdeck.com/sgash708/moupu-ha-openapi-woshu-kitakunai",
+    "event_url": "https://gotalk.connpass.com/event/340279/"
+  },
+  {
+    "event": "BuriKaigi 2025",
+    "date": "2025-02-01",
+    "title": "もし今からGraphQLを採用するなら",
+    "speaker": "早瀬 和輝",
+    "twitter_url": "https://x.com/KazukiHayase",
+    "slide_url": "https://speakerdeck.com/kazukihayase/mosijin-karagraphqlwocai-yong-surunara",
+    "event_url": "https://burikaigi.dev/"
+  },
+  {
+    "event": "技術広報の集い #5 リベンジ!!!",
+    "date": "2025-01-16",
+    "title": "2025年に挑戦したいこと",
+    "speaker": "吉森 健成",
+    "twitter_url": "https://x.com/molmolken",
+    "slide_url": "https://speakerdeck.com/molmolken/tech-pr-challenge-in-2025",
+    "event_url": "https://techpr.connpass.com/event/339814/"
+  },
+  {
+    "event": "BuySell Dev Study 今年の振り返りは今年のうちに！エンジニアリングマネージャーの学び発表会 & 忘年会",
+    "date": "2024-12-19",
+    "title": "【懺悔】1年目 EM の失敗から学ぼう",
+    "speaker": "菅 直也",
+    "twitter_url": "https://x.com/satoIsSugar",
+    "slide_url": "https://speakerdeck.com/sgash708/chan-hui-1nian-mu-em-noshi-bai-karaxue-bou",
+    "event_url": "https://buysell-technologies.connpass.com/event/337798/"
+  },
+  {
+    "event": "AEON TECH HUB #10",
+    "date": "2024-12-17",
+    "title": "イオン・バイセルの実例から学ぶ。「技術戦略の設計・実行」を“チーム化”する重要性と実現方法",
+    "speaker": "今村 雅幸、岡島 久英",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://aeon.connpass.com/event/334401/"
+  },
+  {
+    "event": "Go Connect #4",
+    "date": "2024-12-10",
+    "title": "testcontainers のススメ",
+    "speaker": "菅 直也",
+    "twitter_url": "https://x.com/satoIsSugar",
+    "slide_url": "https://speakerdeck.com/sgash708/testcontainers-nosusume",
+    "event_url": "https://gotalk.connpass.com/event/336208/"
+  },
+  {
+    "event": "BuySell Dev Study 2024年を振り返ろう！若手エンジニアのための交流LTナイト",
+    "date": "2024-12-04",
+    "title": "入社2ヶ月目の新卒がプロダクトのリリースに立ち会ってからチームに貢献できるようになるまで",
+    "speaker": "中舘 澪男",
+    "twitter_url": "https://x.com/nakadate00",
+    "slide_url": "",
+    "event_url": "https://buysell-technologies.connpass.com/event/335378/"
+  },
+  {
+    "event": "BuySell Dev Study 2024年を振り返ろう！若手エンジニアのための交流LTナイト",
+    "date": "2024-12-04",
+    "title": "リリースフローを改善した話",
+    "speaker": "林田 直也",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://buysell-technologies.connpass.com/event/335378/"
+  },
+  {
+    "event": "golang.tokyo #37",
+    "date": "2024-11-20",
+    "title": "「僕ら」のテストに対する向き合い方",
+    "speaker": "菅 直也",
+    "twitter_url": "https://x.com/satoIsSugar",
+    "slide_url": "https://speakerdeck.com/sgash708/pu-ra-notesutonidui-suruxiang-kihe-ifang",
+    "event_url": "https://golangtokyo.connpass.com/event/331510/"
+  },
+  {
+    "event": "Asakusa.go #4",
     "date": "2024-11-08",
-    "event": "CloudNative Days Tokyo 2024",
-    "title": "Kubernetes Gateway API 実践ガイド",
-    "speaker": "田中 太郎",
-    "event_url": "",
-    "slide_url": "https://example.com/slides/k8s-gateway",
-    "twitter_url": "https://x.com/tanaka_example"
+    "title": "spansql で ENUM を使いたかった話",
+    "speaker": "菅 直也",
+    "twitter_url": "https://x.com/satoIsSugar",
+    "slide_url": "https://speakerdeck.com/sgash708/spansql-de-enum-woshi-itakatutahua",
+    "event_url": "https://asakusago.connpass.com/event/334004/"
   },
   {
-    "date": "2024-09-14",
-    "event": "iOSDC Japan 2024",
-    "title": "SwiftUI と The Composable Architecture で作るオフラインファースト設計",
-    "speaker": "高橋 美咲",
-    "event_url": "https://example.com/iosdc-2024",
-    "slide_url": "https://example.com/slides/tca-offline",
-    "twitter_url": "https://x.com/takahashi_example"
+    "event": "Generative AI Summit Tokyo ‘24 Fall",
+    "date": "2024-10-24",
+    "title": "リユース業界における生成 AI の革新と実践活用",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "https://speakerdeck.com/kyuns/generative-ai-at-buysell-technologies",
+    "event_url": "https://cloudonair.withgoogle.com/events/generative-ai-summit-24-fall?talk=24f-t2-session4"
   },
   {
-    "date": "2024-07-20",
-    "event": "July Tech Festa 2024",
-    "title": "SRE チームが取り組んだオブザーバビリティ基盤刷新の舞台裏",
-    "speaker": "鈴木 花子",
-    "event_url": "",
-    "slide_url": "https://example.com/slides/o11y",
-    "twitter_url": ""
+    "event": "Go Connect #3",
+    "date": "2024-10-23",
+    "title": "qmuntal/stateless のススメ",
+    "speaker": "菅 直也",
+    "twitter_url": "https://x.com/satoIsSugar",
+    "slide_url": "https://speakerdeck.com/sgash708/stateless-nosusume",
+    "event_url": "https://gotalk.connpass.com/event/331992/"
   },
   {
-    "date": "2024-03-09",
-    "event": "tskaigi 2024",
-    "title": "TypeScript 5.4 の NoInfer 型を使いこなす",
-    "speaker": "佐藤 一郎",
-    "event_url": "https://example.com/tskaigi-2024",
-    "slide_url": "https://example.com/slides/ts-noinfer",
-    "twitter_url": "https://x.com/sato_example"
+    "event": "STECH FES 2024",
+    "date": "2024-09-29",
+    "title": "社会で活躍するつよつよエンジニアとは",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://careerselect-studygroup.connpass.com/event/327245/"
+  },
+  {
+    "event": "クラウド Watch Day",
+    "date": "2024-09-27",
+    "title": "開発・運用チームを生成AIで繋ぐ　ビジネス視点を醸成するオブザーバビリティ戦略",
+    "speaker": "満永 淳一、福本 隆弘",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://academy.impress.co.jp/event/clwday_genai_202409/"
+  },
+  {
+    "event": "New Relic User Group Vol.11 ただのLT大会",
+    "date": "2024-09-11",
+    "title": "CDNのログでLPの可観測性を高めた話",
+    "speaker": "福本 隆弘",
+    "twitter_url": "https://x.com/tak_0x00",
+    "slide_url": "https://speakerdeck.com/tak0x00/cdnnorogudelpnoke-guan-ce-xing-wogao-metahua",
+    "event_url": "https://nrug.connpass.com/event/327828/"
+  },
+  {
+    "event": "Go Connect#2",
+    "date": "2024-09-04",
+    "title": "sqlxの実装を読んでみた話",
+    "speaker": "菅 直也",
+    "twitter_url": "https://x.com/satoIsSugar",
+    "slide_url": "https://speakerdeck.com/sgash708/sqlx-noshi-zhuang-wodu-ndemitahua",
+    "event_url": "https://gotalk.connpass.com/event/327544/"
+  },
+  {
+    "event": "テック企業が躍動する！「すごいリモートワーク 」〜 環境投資で変わる 生産性とエンゲージメント～",
+    "date": "2024-09-04",
+    "title": "パネルディスカッション",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://hq-hq.co.jp/seminar/20240904"
+  },
+  {
+    "event": "golang.tokyo #36 真夏のLTナイト2024",
+    "date": "2024-08-08",
+    "title": "Atlasをプロジェクトに導入してみた話",
+    "speaker": "菅 直也",
+    "twitter_url": "https://x.com/satoIsSugar",
+    "slide_url": "https://speakerdeck.com/sgash708/atlas-wopuroziekutodao-ru-sitemitahua",
+    "event_url": "https://golangtokyo.connpass.com/event/324882/"
+  },
+  {
+    "event": "Generative AI/LLM Engineer Career Meetup #1",
+    "date": "2024-08-08",
+    "title": "生成AI時代におけるエンジニア像について",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://blueish.connpass.com/event/325451/"
+  },
+  {
+    "event": "ITエンジニア採用カンファレンス2024",
+    "date": "2024-07-30",
+    "title": "日本CTO協会理事に聞く！ エンジニア採用に効く組織作りの秘訣",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://biz.supporterz.jp/seminar/001"
+  },
+  {
+    "event": "女性エンジニア大歓迎！『CTOのリアルなキャリアパス 第2弾』",
+    "date": "2024-07-23",
+    "title": "「CTOのリアルなキャリアパス」 パネルディスカッション",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "https://wake-career.jp/user/setting/new-profile",
+    "event_url": "https://wake-career.connpass.com/event/324091/"
+  },
+  {
+    "event": "【バイセル×LIFULL】学生向けWebエンジニア就活セミナー",
+    "date": "2024-07-19",
+    "title": "CTOが語るプロダクトエンジニアと会社選び",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://buysell-technologies.connpass.com/event/324229/"
+  },
+  {
+    "event": "Developer eXperience Day 2024",
+    "date": "2024-07-17",
+    "title": "メルカリ・LINEヤフー・ゆめみが明かす、開発文化と組織づくりの裏側",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "https://www.youtube.com/watch?v=onWwiFTC-3o",
+    "event_url": "https://cto-a.org/dxd2024"
+  },
+  {
+    "event": "あなたが目指すのはテックリード？マネージャー？若手エンジニアが語るリアルなキャリアトーク /技育CAMPアカデミア",
+    "date": "2024-07-10",
+    "title": "パネルディスカッション",
+    "speaker": "早瀬 和輝、浅香 太平",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://talent.supporterz.jp/events/102d2bb4-2f5a-4360-9c02-88ffd769219e/"
+  },
+  {
+    "event": "開発生産性Conference 2024",
+    "date": "2024-06-29",
+    "title": "経営視点から捉えた開発生産性",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "https://speakerdeck.com/kyuns/development-productivity-from-a-management-perspective",
+    "event_url": "https://dev-productivity-con.findy-code.io/2024?m=2024/m/bQqR5i3Y"
+  },
+  {
+    "event": "第10回IPSJ賛助企業との交流会～全国大会スポンサー企業特集～",
+    "date": "2024-06-26",
+    "title": "リユース業界におけるテクノロジー活用事例の紹介",
+    "speaker": "藤田 肇",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://www.ipsj.or.jp/event/sanjo-koryu_10_2024.html"
+  },
+  {
+    "event": "AEON TECH HUB #5",
+    "date": "2024-06-18",
+    "title": "イオン×バイセル×エムスリーCTOに聞く、技術と組織の本音と戦略",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://aeon.connpass.com/event/318666/"
+  },
+  {
+    "event": "golang.tokyo #35 〜カンファレンス 後夜祭！〜",
+    "date": "2024-06-14",
+    "title": "チームで運用する golangci-lint の向き合い方",
+    "speaker": "菅 直也",
+    "twitter_url": "https://x.com/satoIsSugar",
+    "slide_url": "https://speakerdeck.com/sgash708/timudeyun-yong-suru-golangci-lint-noxiang-kihe-ifang",
+    "event_url": "https://golangtokyo.connpass.com/event/317973/"
+  },
+  {
+    "event": "BuySell Dev Study 成長企業に学ぶ！インシデントマネジメントのノウハウ",
+    "date": "2024-06-11",
+    "title": "急成長を追うインシデントマネジメントのアプローチ",
+    "speaker": "赤川 龍之介",
+    "twitter_url": "https://x.com/r_akgw",
+    "slide_url": "https://speakerdeck.com/akgw/ji-cheng-chang-wozhui-uinsidentomanezimentonoapuroti",
+    "event_url": "https://buysell-technologies.connpass.com/event/319994/"
+  },
+  {
+    "event": "(Unofficial)Go Conference 2024 Pre Party",
+    "date": "2024-06-07",
+    "title": "チーム開発での「掟」としてのGoのコーディング規約作成のススメ",
+    "speaker": "牟田 薫",
+    "twitter_url": "https://x.com/m_t_tion1",
+    "slide_url": "https://speakerdeck.com/kaorumuta/godenotimukai-fa-nitu-zhong-can-hua-sitasi-ga-na-de-siteshi-zhuang-wojin-merutameniyatutakoto-ming-ming-bian",
+    "event_url": "https://moneyforward.connpass.com/event/313929/"
+  },
+  {
+    "event": "(Unofficial)Go Conference 2024 Pre Party",
+    "date": "2024-06-07",
+    "title": "Goでテストをしやすくするためにやったこと",
+    "speaker": "早瀬 和輝",
+    "twitter_url": "https://x.com/KazukiHayase",
+    "slide_url": "https://speakerdeck.com/kazukihayase/gotetesutowosiyasukusurutameniyatutakoto",
+    "event_url": "https://moneyforward.connpass.com/event/313929/"
+  },
+  {
+    "event": "【DMM×バイセル】若手エンジニアによる学生向けTech Study Summit",
+    "date": "2024-05-15",
+    "title": "多重登録を防御するためのノウハウ",
+    "speaker": "小松山 凌平",
+    "twitter_url": "https://x.com/kmtym_dev",
+    "slide_url": "https://speakerdeck.com/kmtym1998/duo-zhong-deng-lu-wofang-yu-surutamenonouhau",
+    "event_url": "https://dmm-recruit.connpass.com/event/316914/"
+  },
+  {
+    "event": "【DMM×バイセル】若手エンジニアによる学生向けTech Study Summit",
+    "date": "2024-05-15",
+    "title": "そのコード、書いたらいくら？消したらいくら？",
+    "speaker": "金澤 滉典",
+    "twitter_url": "",
+    "slide_url": "https://speakerdeck.com/urban_side/sonokodo-shu-itaraikura-xiao-sitaraikura",
+    "event_url": "https://dmm-recruit.connpass.com/event/316914/"
+  },
+  {
+    "event": "【DMM×バイセル】若手エンジニアによる学生向けTech Study Summit",
+    "date": "2024-05-15",
+    "title": "テーブル設計のよくある罠と それに対する処方箋",
+    "speaker": "岩下 拳勝",
+    "twitter_url": "https://x.com/iwashi623",
+    "slide_url": "https://speakerdeck.com/iwashi623/teburushe-ji-noyokuarumin-to-sorenidui-suruchu-fang-jian",
+    "event_url": "https://dmm-recruit.connpass.com/event/316914/"
+  },
+  {
+    "event": "D-Plus Tokyo #1 ~明日からトライできる！開発生産性向上の取り組み紹介LT~",
+    "date": "2024-04-23",
+    "title": "若手のうちに知りたかった生産性の高め方",
+    "speaker": "渡邊 直人",
+    "twitter_url": "https://x.com/naoto_pq",
+    "slide_url": "https://speakerdeck.com/naoto_pq/ruo-shou-noutinizhi-ritakatutasheng-chan-xing-nogao-mefang",
+    "event_url": "https://d-plus.connpass.com/event/315744/"
+  },
+  {
+    "event": "データ基盤だけじゃない！意外と知らないDatabricks活用方法LT",
+    "date": "2024-04-05",
+    "title": "データアナリストが行うDatabricksを活用したETLの自動化事例",
+    "speaker": "西川 史乃亜",
+    "twitter_url": "",
+    "slide_url": "https://speakerdeck.com/shinoa/detaanarisutogaxing-udatabrickswohuo-yong-sitaetlnozi-dong-hua-shi-li",
+    "event_url": "https://findy.connpass.com/event/313933/"
+  },
+  {
+    "event": "技術広報の集い #3",
+    "date": "2024-03-25",
+    "title": "2023年度の成果発表会",
+    "speaker": "吉森 健成",
+    "twitter_url": "https://x.com/molmolken",
+    "slide_url": "",
+    "event_url": "https://techpr.connpass.com/event/310531/"
+  },
+  {
+    "event": "情報処理学会 第86回全国大会 インダストリアルセッション",
+    "date": "2024-03-15",
+    "title": "リユース業界におけるDX・テクノロジー活用事例の紹介",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://www.ipsj.or.jp/event/taikai/86/index.html"
+  },
+  {
+    "event": "MIDAS TECH STUDY 第15回",
+    "date": "2024-02-27",
+    "title": "CTOが語る2024年押さえておくべきエンジニア業界トレンド",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://midastech.connpass.com/event/306727/"
+  },
+  {
+    "event": "生産性向上に本気で取り組むためのヒント",
+    "date": "2024-02-20",
+    "title": "スモールウィンで終わらせない組織ムーブメントのつくり方",
+    "speaker": "渡邊 直人",
+    "twitter_url": "https://x.com/naoto_pq",
+    "slide_url": "https://speakerdeck.com/naoto_pq/sumoruuindezhong-warasenaizu-zhi-mubumentonotukurifang",
+    "event_url": "https://sansan.connpass.com/event/309228/"
+  },
+  {
+    "event": "BuySell Dev Study エンジニア評価制度勉強会",
+    "date": "2024-02-15",
+    "title": "テックカンパニーにおけるエンジニア評価の重要性",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://buysell-technologies.connpass.com/event/308794/"
+  },
+  {
+    "event": "Developers Summit 2024",
+    "date": "2024-02-15",
+    "title": "事業で成果を出すCTOたち",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://event.shoeisha.jp/devsumi/20240215/session/4781"
+  },
+  {
+    "event": "DevRel/Tokyo #89 〜テックブログ運営〜",
+    "date": "2024-02-07",
+    "title": "テックブログの品質を担保する取り組み",
+    "speaker": "吉森 健成",
+    "twitter_url": "https://x.com/molmolken",
+    "slide_url": "https://speakerdeck.com/molmolken/efforts-to-ensure-the-quality-of-buysell-techblog",
+    "event_url": "https://devrel.connpass.com/event/307992/"
+  },
+  {
+    "event": "集え若手！エンジニア・デザイナー交流LT会",
+    "date": "2024-01-26",
+    "title": "うれしい！たのしい！新規開発！",
+    "speaker": "神保 拓眞",
+    "twitter_url": "https://x.com/ce_mm",
+    "slide_url": "",
+    "event_url": "https://yumemi.connpass.com/event/304115/"
+  },
+  {
+    "event": "集え若手！エンジニア・デザイナー交流LT会",
+    "date": "2024-01-26",
+    "title": "現場に行ってわかること、わからないこと",
+    "speaker": "植地 洋斗",
+    "twitter_url": "https://x.com/con_plantLand",
+    "slide_url": "",
+    "event_url": "https://yumemi.connpass.com/event/304115/"
+  },
+  {
+    "event": "集え若手！エンジニア・デザイナー交流LT会",
+    "date": "2024-01-26",
+    "title": "あらゆることに挑んだ 1年",
+    "speaker": "難波 智貴",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://yumemi.connpass.com/event/304115/"
+  },
+  {
+    "event": "生成AIを活用したプロダクト開発の実践〜戦略とケーススタディ〜",
+    "date": "2023-12-12",
+    "title": "パネルディスカッション",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://generative-ai-conf.connpass.com/event/301243/"
+  },
+  {
+    "event": "開発生産性の未来：世界と日本の最前線事例から培うFour Keys向上〜ハイブリッドカンファレンス〜",
+    "date": "2023-11-28",
+    "title": "組織拡大フェーズにおけるペインと開発生産性向上の推進",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://findy.connpass.com/event/298196/"
+  },
+  {
+    "event": "PIVOT Growth Drivers",
+    "date": "2023-11-21",
+    "title": "【変革のキーワードは「愛と数字」】なぜZOZO・バイセルがテックカンパニーになれたか",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "https://open.spotify.com/episode/0GZvEQsgpFbpEJXabpDfPF?si=s7PCar45Sxad36p0hEFWkw&nd=1&dlsi=7e7a658a73a641f2",
+    "event_url": ""
+  },
+  {
+    "event": "FRONTEND CONFERENCE OKINAWA 2023",
+    "date": "2023-11-18",
+    "title": "GraphQLクライアントの技術選定 2023冬",
+    "speaker": "早瀬 和輝",
+    "twitter_url": "https://x.com/KazukiHayase",
+    "slide_url": "https://speakerdeck.com/kazukihayase/graphqlkuraiantonoji-shu-xuan-ding-2023dong",
+    "event_url": "https://frontend-conf.okinawa.jp/"
+  },
+  {
+    "event": "MIDAS TECH STUDY #14 「DevRel/技術広報」が解決する課題とは？実例から学ぶ成長戦略",
+    "date": "2023-11-07",
+    "title": "テックカンパニーを支える技術広報",
+    "speaker": "吉森 健成",
+    "twitter_url": "https://x.com/molmolken",
+    "slide_url": "https://speakerdeck.com/molmolken/tetukukanpaniwozhi-eruji-shu-guang-bao",
+    "event_url": "https://midastech.connpass.com/event/297825/"
+  },
+  {
+    "event": "BuySell Dev Study #4 フロントエンド勉強会",
+    "date": "2023-10-25",
+    "title": "Post Zod - Valibotの紹介",
+    "speaker": "飯島 和弥",
+    "twitter_url": "https://x.com/kazizi55",
+    "slide_url": "https://speakerdeck.com/kazizi55/post-zod-valibotnoshao-jie",
+    "event_url": "https://buysell-technologies.connpass.com/event/274923/"
+  },
+  {
+    "event": "Reuse × Tech Conference for 2024",
+    "date": "2023-10-03",
+    "title": "バイセルCTOが語る、リユース事業における最先端テクノロジー活用の可能性",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "https://www.recycle-tsushin.com/news/detail_8890.php",
+    "event_url": "https://www.recycle-tsushin.com/reusetech/"
+  },
+  {
+    "event": "Startup CXO Conference",
+    "date": "2023-09-22",
+    "title": "テクノロジーが時価総額にどう影響を与えるか",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "https://jp.smartround.com/startup-next/post/cxoconference2023-cto",
+    "event_url": "https://jp.smartround.com/event/cxoconference/202309"
+  },
+  {
+    "event": "Meetup #21 Guest talk and lightning talks",
+    "date": "2023-09-13",
+    "title": "Hasuraを採用したアーキテクチャの紹介と所感（Introduction and Insights of the Hasura-based Architecture）",
+    "speaker": "早瀬 和輝",
+    "twitter_url": "https://x.com/KazukiHayase",
+    "slide_url": "https://speakerdeck.com/kazukihayase/introduction-and-insights-of-the-hasura-based-architecture",
+    "event_url": "https://www.meetup.com/graphql-tokyo/events/295606838/"
+  },
+  {
+    "event": "MagicPodユーザーLT会",
+    "date": "2023-07-14",
+    "title": "高い開発生産性を実現するために取り組んだMagicPodの利活用",
+    "speaker": "神保 拓眞",
+    "twitter_url": "https://x.com/ce_mm",
+    "slide_url": "https://speakerdeck.com/jimbo/gao-ikai-fa-sheng-chan-xing-woshi-xian-surutameniqu-rizu-ndamagicpodnoli-huo-yong",
+    "event_url": "https://trident-qa.connpass.com/event/283709/"
+  },
+  {
+    "event": "Google Cloud Modern App Summit",
+    "date": "2023-07-14",
+    "title": "【基調講演】モダンなシステム アーキテクチャとジェネレーティブ AI がもたらすソフトウェア開発の今後",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://cloudonair.withgoogle.com/events/modern-app-summit-23q3"
+  },
+  {
+    "event": "『LeanとDevOpsの科学』著者登壇！開発生産性Conference",
+    "date": "2023-07-13",
+    "title": "Four Keys改善のハードシングス！NewsPicks・バイセル・はてなが直面したハードルと乗り越え方",
+    "speaker": "渡邊 直人",
+    "twitter_url": "https://x.com/naoto_pq",
+    "slide_url": "https://www.youtube.com/watch?v=txFw5RgUWy4",
+    "event_url": "https://findy.connpass.com/event/283417/"
+  },
+  {
+    "event": "しくじりCTO 私みたいになるな＠エンジニア評価＆育成編～上場前後に起きた組織問題に関して～",
+    "date": "2023-07-12",
+    "title": "パネルディスカッション",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "https://note.com/ctoa_ja/n/n5a5640906733",
+    "event_url": ""
+  },
+  {
+    "event": "BuySell Dev Study #3 注目企業のVPoEが語る！エンジニア採用 勉強会",
+    "date": "2023-07-05",
+    "title": "パネルディスカッション",
+    "speaker": "渡邊 直人",
+    "twitter_url": "https://x.com/naoto_pq",
+    "slide_url": "",
+    "event_url": "https://buysell-technologies.connpass.com/event/287599/"
+  },
+  {
+    "event": "俺たちの本当にやりたかったDevDay",
+    "date": "2023-06-21",
+    "title": "自分だけが頑張るのをやめて、フルスタックなチームを作る",
+    "speaker": "早瀬 和輝",
+    "twitter_url": "https://x.com/KazukiHayase",
+    "slide_url": "https://speakerdeck.com/kazukihayase/zi-fen-dakegawan-zhang-runowoyamete-hurusutatukunatimuwozuo-ru",
+    "event_url": "https://connpass.com/event/282059/"
+  },
+  {
+    "event": "日本CTO協会 | Developer eXperience Day 2023",
+    "date": "2023-06-14",
+    "title": "【Developer eXperience 2023 表彰式・受賞者による特別トークセッション】",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://cto-a.connpass.com/event/277153/"
+  },
+  {
+    "event": "士業トップ(CFO、CLO etc.)✕ITトップ(CTO、CIO etc.) SIGYOIT 交流会",
+    "date": "2023-06-03",
+    "title": "特別講演「経営チーム CXOに何を求めるか」",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "https://note.com/iroirodraft/n/n6e94f48e1050",
+    "event_url": "https://sigyo-it.connpass.com/event/279274/"
+  },
+  {
+    "event": "【ZOZO x ベースマキナ x バイセル】Go勉強会 #1【ハイブリッド開催】",
+    "date": "2023-05-24",
+    "title": "Goでテンプレートからファイルを自動生成するCLIを作る",
+    "speaker": "早瀬 和輝",
+    "twitter_url": "https://x.com/KazukiHayase",
+    "slide_url": "https://speakerdeck.com/kazukihayase/godetenpuretokarahuairuwozi-dong-sheng-cheng-surucliwozuo-ru",
+    "event_url": "https://buysell-technologies.connpass.com/event/283768/"
+  },
+  {
+    "event": "【開発生産性 Meetup #2】開発生産性向上が生むシナジー~採用/育成の取り組み紹介LT~",
+    "date": "2023-05-19",
+    "title": "採用・育成・開発生産性　同時に取り組む強いチーム",
+    "speaker": "渡邊 直人",
+    "twitter_url": "https://x.com/naoto_pq",
+    "slide_url": "https://speakerdeck.com/naoto_pq/kai-fa-sheng-chan-xing-wocai-yong-nowu-qi-nisuru",
+    "event_url": "https://findy.connpass.com/event/281567/"
+  },
+  {
+    "event": "事例から学ぶ！CTO達が語るオフライン限定のエンジニア評価制度勉強会",
+    "date": "2023-05-16",
+    "title": "パネルディスカッション",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://midastech.connpass.com/event/280158/"
+  },
+  {
+    "event": "Findy 開発生産性向上へのトライ事例LT会",
+    "date": "2023-04-26",
+    "title": "生産性が上がり続けるチームを作るための第一歩",
+    "speaker": "早瀬 和輝",
+    "twitter_url": "https://x.com/KazukiHayase",
+    "slide_url": "https://speakerdeck.com/kazukihayase/sheng-chan-xing-gashang-garisok-kerutimuwozuo-rutamenodi-bu",
+    "event_url": "https://findy.connpass.com/event/279894/"
+  },
+  {
+    "event": "「DX AWARD 2022」上位企業が語る、結果につながる技術広報戦略【スタートアップ編】",
+    "date": "2023-04-25",
+    "title": "パネルディスカッション",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "https://www.youtube.com/live/vf16TEKBGOQ",
+    "event_url": "https://cto-a.connpass.com/event/277992/"
+  },
+  {
+    "event": "一歩先の開発生産性とは GitHub・今村さん・吉羽さんから学ぶ",
+    "date": "2023-04-18",
+    "title": "パネルディスカッション",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "https://findy-code.io/events/oLfWHmwwu6eqm?fr=event_archive_20230418",
+    "event_url": "https://findy.connpass.com/event/279356/"
+  },
+  {
+    "event": "プロ経営者としてのCTO が実践する テックカンパニー化請負術",
+    "date": "2023-03-22",
+    "title": "プロ経営者としてのCTO が実践する テックカンパニー化請負術",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://offers.connpass.com/event/275707/"
+  },
+  {
+    "event": "リクルート × BASE × バイセル 【第1回フロントエンド勉強会】React & GraphQL",
+    "date": "2023-03-15",
+    "title": "Reactのコンポーネント設計",
+    "speaker": "金子 直人",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://buysell-technologies.connpass.com/event/276135/"
+  },
+  {
+    "event": "リクルート × BASE × バイセル 【第1回フロントエンド勉強会】React & GraphQL",
+    "date": "2023-03-15",
+    "title": "GraphQLでのキャッシュ戦略",
+    "speaker": "早瀬 和輝",
+    "twitter_url": "https://x.com/KazukiHayase",
+    "slide_url": "",
+    "event_url": "https://buysell-technologies.connpass.com/event/276135/"
+  },
+  {
+    "event": "アジャイル開発「スクラム」って各社どうしてる?エンジニア知見共有会",
+    "date": "2023-03-09",
+    "title": "チームの生産性を向上させるためのスクラム運用",
+    "speaker": "藤澤 明慶",
+    "twitter_url": "",
+    "slide_url": "https://www.tech-street.jp/entry/2023/05/11/135004",
+    "event_url": "https://tech-street.connpass.com/event/275039/"
+  },
+  {
+    "event": "CTOA若手エンジニアコミュニティ 勉強会#1",
+    "date": "2023-01-26",
+    "title": "非公開",
+    "speaker": "早瀬 和輝",
+    "twitter_url": "https://x.com/KazukiHayase",
+    "slide_url": "",
+    "event_url": "https://ctoa-wakate-lt-1.peatix.com/view"
+  },
+  {
+    "event": "【DMM×バイセル】結局何を追うべき？開発生産性向上に向けたベストプラクティス",
+    "date": "2023-01-18",
+    "title": "「プルリク作成数がセンターピン」BuySell Technologiesの仮説思考が生んだ圧倒的生産性向上と課題解決",
+    "speaker": "渡邊 直人、赤川龍之介",
+    "twitter_url": "",
+    "slide_url": "https://blog.findy-team.io/posts/dmm_buysell/",
+    "event_url": "https://findy.connpass.com/event/271403/"
+  },
+  {
+    "event": "Money Forward、GENDA、BuySell TechnologiesのGo最前線",
+    "date": "2022-12-13",
+    "title": "GitHub Flowでの高速なデリバリーをささえるテスト基盤について",
+    "speaker": "金 祺庸",
+    "twitter_url": "https://x.com/kyongshiii06",
+    "slide_url": "https://speakerdeck.com/kyong0612/github-flowtenogao-su-naterihariwosasaerutesutoji-pan-nituite",
+    "event_url": "https://midastech.connpass.com/event/266874/"
+  },
+  {
+    "event": "「DX Award 2022」上位企業が語る、結果につながる技術広報戦略【Zホールディングス編】",
+    "date": "2022-11-29",
+    "title": "各社のDevRel事情を聞き、技術広報として成果を出すためのポイントや悩みポイントをディスカッション",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "https://www.youtube.com/live/VZrn2dQNC2g?feature=share",
+    "event_url": "https://cto-a.connpass.com/event/260573/?utm_source=twitter&utm_campaign=221129_events"
+  },
+  {
+    "event": "顧客提供価値を高めるための技術的負債への向き合い方",
+    "date": "2022-11-10",
+    "title": "技術的負債として最初に向き合ったもの / 負債における技術構成と解消への取り組み方 / 今後に向けての技術的アプローチ",
+    "speaker": "今村 雅幸",
+    "twitter_url": "https://x.com/kyuns",
+    "slide_url": "",
+    "event_url": "https://findy.connpass.com/event/263112/"
+  },
+  {
+    "event": "Reactをもっと語りたい！",
+    "date": "2022-10-27",
+    "title": "ReactとGraphQLで実現する宣言的データフェッチ",
+    "speaker": "早瀬 和輝",
+    "twitter_url": "https://x.com/KazukiHayase",
+    "slide_url": "",
+    "event_url": "https://rakus.connpass.com/event/258984/"
+  },
+  {
+    "event": "アジャイル開発エンジニア勉強会vol.2.0",
+    "date": "2022-03-29",
+    "title": "データ分析でアジャイル開発は加速する",
+    "speaker": "松榮 健至",
+    "twitter_url": "",
+    "slide_url": "",
+    "event_url": "https://tech-street.connpass.com/event/241159/"
   }
 ]
