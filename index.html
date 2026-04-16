@@ -47,16 +47,11 @@
     background: radial-gradient(circle, rgba(88,166,255,0.12) 0%, transparent 70%);
     pointer-events: none;
   }
-  .hero h1 {
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 900;
-    letter-spacing: -0.02em;
+  .hero-logo {
+    max-width: 340px;
+    width: 70%;
+    height: auto;
     position: relative;
-  }
-  .hero h1 span {
-    background: linear-gradient(135deg, var(--accent), var(--pink));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
   .hero p {
     color: var(--text-muted);
@@ -242,7 +237,7 @@
 <body>
 
 <div class="hero">
-  <h1><span>Our Tech Talks</span></h1>
+  <img src="./logo.png" alt="BuySell Technologies" class="hero-logo">
   <p>社内メンバーの技術勉強会・カンファレンス登壇履歴</p>
 </div>
 
