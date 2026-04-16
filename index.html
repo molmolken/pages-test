@@ -202,6 +202,19 @@
     color: var(--text);
     font-weight: 700;
   }
+  .talk-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    margin-top: 10px;
+    font-size: 0.82rem;
+  }
+  .talk-links a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+  .talk-links a:hover { opacity: 0.75; }
 
   .no-results {
     text-align: center;
@@ -238,7 +251,7 @@
 
 <div class="hero">
   <img src="./logo.png" alt="BuySell Technologies" class="hero-logo">
-  <p>BuySell Technologies：技術勉強会・カンファレンスの登壇情報</p>
+  <p>社内メンバーの技術勉強会・カンファレンス登壇履歴</p>
 </div>
 
 <div class="stats" id="stats"></div>
@@ -329,9 +342,17 @@
         currentYear = y;
         html += `<div class="year-divider">${y}</div>`;
       }
-      const titleContent = t.url
-        ? `<a href="${t.url}" target="_blank" rel="noopener">${esc(t.title)} ↗</a>`
-        : esc(t.title);
+      const titleContent = esc(t.title);
+
+      // リンク行を組み立て（値があるものだけ表示）
+      const links = [];
+      if (t.event_url) links.push(`<a href="${t.event_url}" target="_blank" rel="noopener">イベント ↗</a>`);
+      if (t.slide_url) links.push(`<a href="${t.slide_url}" target="_blank" rel="noopener">登壇資料 ↗</a>`);
+      if (t.twitter_url) links.push(`<a href="${t.twitter_url}" target="_blank" rel="noopener">X (Twitter) ↗</a>`);
+      const linksHtml = links.length
+        ? `<div class="talk-links">${links.join('')}</div>`
+        : '';
+
       html += `
         <div class="talk-card" style="animation-delay:${i * 0.04}s">
           <div class="talk-meta">
@@ -340,6 +361,7 @@
           </div>
           <div class="talk-title">${titleContent}</div>
           <div class="talk-speaker">by <strong>${esc(t.speaker)}</strong></div>
+          ${linksHtml}
         </div>`;
     });
     container.innerHTML = html;

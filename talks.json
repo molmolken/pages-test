@@ -4,48 +4,62 @@
     "event": "React Conf Tokyo 2025",
     "title": "大規模SPAのパフォーマンス改善 ─ Core Web Vitals との戦い",
     "speaker": "田中 太郎",
-    "url": "https://example.com/slides/react-perf"
+    "event_url": "https://example.com/react-conf-2025",
+    "slide_url": "https://example.com/slides/react-perf",
+    "twitter_url": "https://x.com/tanaka_example"
   },
   {
     "date": "2025-03-22",
     "event": "Go Conference 2025 Spring",
     "title": "Go 1.24 の iter パッケージ徹底解説",
     "speaker": "鈴木 花子",
-    "url": "https://example.com/slides/go-iter"
+    "event_url": "https://example.com/gocon-2025",
+    "slide_url": "https://example.com/slides/go-iter",
+    "twitter_url": ""
   },
   {
     "date": "2025-02-15",
     "event": "JAWS DAYS 2025",
     "title": "AWS Lambda SnapStart で Java アプリのコールドスタートを 90% 削減した話",
     "speaker": "佐藤 一郎",
-    "url": ""
+    "event_url": "https://example.com/jawsdays-2025",
+    "slide_url": "",
+    "twitter_url": "https://x.com/sato_example"
   },
   {
     "date": "2024-11-08",
     "event": "CloudNative Days Tokyo 2024",
     "title": "Kubernetes Gateway API 実践ガイド",
     "speaker": "田中 太郎",
-    "url": "https://example.com/slides/k8s-gateway"
+    "event_url": "",
+    "slide_url": "https://example.com/slides/k8s-gateway",
+    "twitter_url": "https://x.com/tanaka_example"
   },
   {
     "date": "2024-09-14",
     "event": "iOSDC Japan 2024",
     "title": "SwiftUI と The Composable Architecture で作るオフラインファースト設計",
     "speaker": "高橋 美咲",
-    "url": "https://example.com/slides/tca-offline"
+    "event_url": "https://example.com/iosdc-2024",
+    "slide_url": "https://example.com/slides/tca-offline",
+    "twitter_url": "https://x.com/takahashi_example"
   },
   {
     "date": "2024-07-20",
     "event": "July Tech Festa 2024",
     "title": "SRE チームが取り組んだオブザーバビリティ基盤刷新の舞台裏",
     "speaker": "鈴木 花子",
-    "url": "https://example.com/slides/o11y"
+    "event_url": "",
+    "slide_url": "https://example.com/slides/o11y",
+    "twitter_url": ""
   },
   {
     "date": "2024-03-09",
     "event": "tskaigi 2024",
     "title": "TypeScript 5.4 の NoInfer 型を使いこなす",
     "speaker": "佐藤 一郎",
-    "url": "https://example.com/slides/ts-noinfer"
+    "event_url": "https://example.com/tskaigi-2024",
+    "slide_url": "https://example.com/slides/ts-noinfer",
+    "twitter_url": "https://x.com/sato_example"
   }
 ]
